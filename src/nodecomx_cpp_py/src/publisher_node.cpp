@@ -3,6 +3,8 @@
 #include <memory>
 #include <string>
 
+
+#include "lib/Evo_janusXsdm/Evo_janusXsdm.cpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
@@ -23,13 +25,26 @@ public:
             std::bind(&ComPubNode::timer_callback, this)
         );
         RCLCPP_INFO(this->get_logger(), "EvoLogistics Publisher Node has been started.");
+
+        //Constructor parameters for Evo_janusXsdm.h
+        std::string JANUSPATH = "/lib/janus-c-3.0.5/bin/";
+        std::string SDMPATH = "/lib/sdmsh/";
+        std::string IP = "192.168.0.198";
+        int JANUS_RX_PORT = 9955;
+        int JANUS_TX_PORT = 9955;
+        float STREAMFS = 250000.0;
+
+        //Global variables
+        std::string response;
+        int listenCount = 0;
+
     }
 
 private:
     void timer_callback()
     {
         auto message = std_msgs::msg::String();
-        message.data = "Hello, world! " + std::to_string(count_++);
+        message.data = "Counting: " + std::to_string(count_++);
         RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
         publisher_->publish(message);
     }
