@@ -104,7 +104,6 @@ stream_listen_error:
 
 static int stream_open(sdm_stream_t *stream)
 {
-
     struct private_data_t *pdata;
     int rc, port;
     char *args;
@@ -215,7 +214,7 @@ static int stream_write(sdm_stream_t *stream, void* samples, unsigned sample_cou
     pdata = stream->pdata;
 
     if (stream->direction == STREAM_INPUT)
-        RETURN_ERROR("writing to stream", ENOTSUP); //Wm was here 3 
+        RETURN_ERROR("writing to stream", ENOTSUP);
 
     do {
         rc = write(pdata->fd, &((char*)samples)[offset], requested_length - offset);
@@ -224,7 +223,7 @@ static int stream_write(sdm_stream_t *stream, void* samples, unsigned sample_cou
         } else {
             if (rc < 0 && (errno == EAGAIN || errno == EINTR))
                 continue;
-            RETURN_ERROR("writing to stream", errno); //WM was here 3 
+            RETURN_ERROR("writing to stream", errno);
         }
     } while (offset < requested_length);
 

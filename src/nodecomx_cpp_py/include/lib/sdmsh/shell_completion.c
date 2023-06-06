@@ -17,7 +17,6 @@ static struct shell_config *shell_config;
 
 static char* shell_rl_driver_completion(const char *text, int index)
 {
-    
     int cnt = 0;
     struct driver_t *drv;
 
@@ -48,7 +47,6 @@ static char* shell_rl_driver_completion(const char *text, int index)
 
 static char* shell_rl_driver_gen(const char *text, int state)
 {
-    
     static int list_index;
     char *name;
 
@@ -66,7 +64,6 @@ static char* shell_rl_driver_gen(const char *text, int state)
 
 static char* shell_rl_command_completion(const char *text, int index)
 {
-    
     char *name = NULL;
     int cnt = 0;
     struct commands_t *cmd;
@@ -83,7 +80,6 @@ static char* shell_rl_command_completion(const char *text, int index)
 
 static char* shell_rl_cmd_gen(const char *text, int state)
 {
-    
     static int list_index;
     char *name;
 
@@ -100,7 +96,6 @@ static char* shell_rl_cmd_gen(const char *text, int state)
 
 static int is_driver_completion_command(struct shell_config *sc, char *input)
 {
-    
     struct commands_t *cmd;
 
     for (cmd = sc->commands; cmd->name != NULL; cmd++)
@@ -116,7 +111,6 @@ static int is_driver_completion_command(struct shell_config *sc, char *input)
 
 static int shell_completion_filter(char **matches, shell_filter_func_t *filter_func)
 {
-    
     char **new_matches;
     int cnt = 0;
     int i, nidx;
@@ -149,7 +143,6 @@ static int shell_completion_filter(char **matches, shell_filter_func_t *filter_f
 
 static int shell_filter_scripts_name(char *name)
 {
-    
     struct stat sb;
     char *p = strrchr(name, '.');
 
@@ -201,7 +194,6 @@ static char* shell_rl_hook_dummy(const char *text, int state)
 
 void shell_completion_init(struct shell_config *sc)
 {
-    
     shell_config = sc;
     rl_attempted_completion_function = shell_cb_completion;
     rl_completion_entry_function = shell_rl_hook_dummy;

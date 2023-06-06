@@ -31,13 +31,13 @@
 
 /* Define to a macro mangling the given C identifier (in lower and upper
    case), which must not contain underscores, for linking with Fortran. */
-/* #undef F77_FUNC */
+#define F77_FUNC(name,NAME) name ## _
 
 /* As F77_FUNC, but for C identifiers containing underscores. */
-/* #undef F77_FUNC_ */
+#define F77_FUNC_(name,NAME) name ## _
 
 /* Define if F77_FUNC and F77_FUNC_ are equivalent. */
-/* #undef F77_FUNC_EQUIV */
+#define F77_FUNC_EQUIV 1
 
 /* Define if F77 and FC dummy `main' functions are identical. */
 /* #undef FC_DUMMY_MAIN_EQ_F77 */
@@ -404,7 +404,7 @@
 
 /* Include g77-compatible wrappers in addition to any other Fortran wrappers.
    */
-/* #undef WITH_G77_WRAPPERS */
+#define WITH_G77_WRAPPERS 1
 
 /* Use our own aligned malloc routine; mainly helpful for Windows systems
    lacking aligned allocation system-library routines. */

@@ -26,7 +26,6 @@ static struct shell_config *shell_config;
 
 void rl_cb_getline(char* line)
 {
-    
     shell_config->shell_input = line;
     if (line == NULL) {
         shell_config->shell_quit = 1;
