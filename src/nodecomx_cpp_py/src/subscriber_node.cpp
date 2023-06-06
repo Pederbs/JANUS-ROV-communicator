@@ -14,7 +14,7 @@ public:
             10, 
             std::bind(&ComSubNode::callbackSensorValues, this, std::placeholders::_1)
         );
-        RCLCPP_INFO(this->get_logger(), "comEvo has been started.");
+        RCLCPP_INFO(this->get_logger(), "EvoLogistics Subscriber Node has been started.");
     }
 private:
     void callbackSensorValues(const std_msgs::msg::String::SharedPtr msg)
