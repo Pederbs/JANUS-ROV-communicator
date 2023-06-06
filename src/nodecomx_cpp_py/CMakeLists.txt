@@ -22,11 +22,11 @@ find_package(std_msgs REQUIRED)
 include_directories(include)
 
 # Create Subscriber executable
-add_executable(subscriberEvo src/subscriber_node.cpp)
+add_executable(subscriberEvo src/TX_node.cpp)
 ament_target_dependencies(subscriberEvo rclcpp std_msgs)
 
 # Create Publisher executable
-add_executable(publisherEvo src/publisher_node.cpp)
+add_executable(publisherEvo src/RX_node.cpp)
 ament_target_dependencies(publisherEvo rclcpp std_msgs)
 
 # Install Cpp executables
