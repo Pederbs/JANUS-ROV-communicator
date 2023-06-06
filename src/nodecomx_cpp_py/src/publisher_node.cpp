@@ -17,8 +17,11 @@ public:
     ComPubNode() : Node("minimal_publisher"), count_(0)
     {
         publisher_ = this->create_publisher<std_msgs::msg::String>("modemTopic", 10);
-        timer_ = this->create_wall_timer(
-            500ms, std::bind(&ComPubNode::timer_callback, this));
+        timer_ = this->create_wall_timer
+        (
+            500ms, 
+            std::bind(&ComPubNode::timer_callback, this)
+        );
         RCLCPP_INFO(this->get_logger(), "EvoLogistics Publisher Node has been started.");
     }
 
