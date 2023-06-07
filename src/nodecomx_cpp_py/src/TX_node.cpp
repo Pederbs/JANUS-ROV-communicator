@@ -44,7 +44,7 @@ public:
         // Creating subsciber
         subscriber_ = this->create_subscription<std_msgs::msg::String>
         (
-            "modemTopic", 
+            "topicA", 
             10, 
             std::bind(&ComSubNode::callbackSensorValues, this, std::placeholders::_1)
         );

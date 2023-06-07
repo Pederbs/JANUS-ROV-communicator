@@ -21,18 +21,23 @@ find_package(std_msgs REQUIRED)
 # include_directories(include; ${example_interfaces_INCLUDE_DIRS})
 include_directories(include)
 
-# Create Subscriber executable
-add_executable(subscriberEvo src/TX_node.cpp)
-ament_target_dependencies(subscriberEvo rclcpp std_msgs)
+# Create RX executable
+add_executable(txEvo src/TX_node.cpp)
+ament_target_dependencies(txEvo rclcpp std_msgs)
 
-# Create Publisher executable
-add_executable(publisherEvo src/RX_node.cpp)
-ament_target_dependencies(publisherEvo rclcpp std_msgs)
+# Create TX executable
+add_executable(rxEvo src/RX_node.cpp)
+ament_target_dependencies(rxEvo rclcpp std_msgs)
+
+# Create publisher executable
+add_executable(publisher src/publisher.cpp)
+ament_target_dependencies(publisher rclcpp std_msgs)
 
 # Install Cpp executables
 install(TARGETS
-  subscriberEvo
-  publisherEvo
+  txEvo
+  rxEvo
+  publisher
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -23,10 +23,12 @@
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUS_PATH = "src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/";
 std::string SDM_PATH = "src/nodecomx_cpp_py/include/lib/sdmsh/";
-std::string IP ="192.168.0.189";
-int JANUS_RX_PORT = 9920;
-int JANUS_TX_PORT = 9914;
+std::string IP ="192.168.0.198";
+int JANUS_RX_PORT = 9921;
+int JANUS_TX_PORT = 9915;
 float STREAMFS = 250000.0;
+
+// RX varaibles
 int timeout = 6000; // milliseconds [ms]
 std::string response;
 
@@ -56,29 +58,53 @@ public:
             std::bind(&ComPubNode::timer_callback, this)
         );
         RCLCPP_INFO(this->get_logger(), "EvoLogistics Publisher Node has been started.");
+        ac();
     }
 
 private:
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
 
-    void timer_callback()
+    void ac()
     {
-        // Receive from modem
         Evo_janusXsdm::connection modem(IP, JANUS_PATH, SDM_PATH, JANUS_RX_PORT, JANUS_TX_PORT, STREAMFS);
-        int fd_listen = modem.startRX();
         std::this_thread::sleep_for(500ms);
-        modem.listenRX(fd_listen, response, timeout);
+        int fd_listen = modem.startRX();
+        while(rclcpp::ok())
+        {
+            modem.listenRX(fd_listen, response, 120000);
 
-        // Populate and publish message
-        auto message = std_msgs::msg::String();
-        message.data = response;
-        RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
-        publisher_->publish(message);
+            // Populate and publish message
+            auto message = std_msgs::msg::String();
+            message.data = response;
+            std::cout << response << "hello \n";
+            RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+            publisher_->publish(message);
+
+        }
 
         // Close JANUS pipe
         modem.closePipeRX(fd_listen);
         modem.stopRX();
+    }
+
+    void timer_callback()
+    {
+        // // Receive from modem
+        // Evo_janusXsdm::connection modem(IP, JANUS_PATH, SDM_PATH, JANUS_RX_PORT, JANUS_TX_PORT, STREAMFS);
+        // int fd_listen = modem.startRX();
+        // std::this_thread::sleep_for(500ms);
+        // modem.listenRX(fd_listen, response, timeout);
+
+        // // Populate and publish message
+        // auto message = std_msgs::msg::String();
+        // message.data = response;
+        // RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+        // publisher_->publish(message);
+
+        // // Close JANUS pipe
+        // modem.closePipeRX(fd_listen);
+        // modem.stopRX();
     }
 };
 
