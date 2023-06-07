@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5
+CMAKE_SOURCE_DIR = /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin
+CMAKE_BINARY_DIR = /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin
 
 # Utility rule file for generated.
 
@@ -78,6 +78,6 @@ CMakeFiles/generated.dir/clean:
 .PHONY : CMakeFiles/generated.dir/clean
 
 CMakeFiles/generated.dir/depend:
-	cd /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5 /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5 /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles/generated.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5 /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5 /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles/generated.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/generated.dir/depend
 
