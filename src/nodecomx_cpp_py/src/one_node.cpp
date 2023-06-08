@@ -33,13 +33,14 @@ public:
     }
 
 private:
+    std::string topicA_info;
     void topicACallback(const std_msgs::msg::String::SharedPtr msg)
     {
         // Process the received data from topic A
         RCLCPP_INFO(this->get_logger(), "Received: %s", msg->data.c_str());
 
         // Perform computations or actions using the received data
-
+        topicA_info = msg->data.c_str();
 
     }
 
@@ -48,29 +49,29 @@ private:
         // Opening pipe
         Evo_janusXsdm::connection modem(IP, JANUS_PATH, SDM_PATH, JANUS_RX_PORT, JANUS_TX_PORT, STREAMFS);
         // Configures modem and sets preamble
-        modem.sdmConfigAir();
-        std::this_thread::sleep_for(500ms);
-        modem.setPreamble();
-        std::this_thread::sleep_for(500ms);
-
+        // modem.sdmConfigAir();
+        // std::this_thread::sleep_for(500ms);
+        // modem.setPreamble();
+        // std::this_thread::sleep_for(500ms);
+        std::cout << "Init while\n";
         while (rclcpp::ok())
         {
         // Start process
-        int fd_listen = modem.startRX();
-        modem.listenRX(fd_listen, response, timeout);
+        // int fd_listen = modem.startRX();
+        // modem.listenRX(fd_listen, response, timeout);
 
         // Bare dersom noe er tatt imot
         // Publish the processed data to topic B
-        std_msgs::msg::String output_msg;
-        output_msg.data = response;
-        publisher_->publish(output_msg);
-        rclcpp::spin_some(this->get_node_base_interface());
-        // Close JANUS pipe
-        modem.closePipeRX(fd_listen);
-        modem.stopRX();
+        // std_msgs::msg::String output_msg;
+        // output_msg.data = response;
+        // publisher_->publish(output_msg);
+        // rclcpp::spin_some(this->get_node_base_interface());
+        // // Close JANUS pipe
+        // modem.closePipeRX(fd_listen);
+        // modem.stopRX();
 
-        // Sender
-        modem.startTX("ello mate");
+        // // Sender
+        // modem.startTX("ello mate");
 
 
 

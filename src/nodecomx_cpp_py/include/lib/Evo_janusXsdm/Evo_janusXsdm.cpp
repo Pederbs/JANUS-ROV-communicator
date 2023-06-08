@@ -504,10 +504,10 @@ namespace Evo_janusXsdm
                /*if(pfd.revents & POLLIN){                                             //TODO: switch else with this pollin:)
                     //std::cout << "POLLIN"<< std::endl;
                 }  */ 
-                if(pfd.revents & POLLHUP){
-                    std::cout << "POLLHUP"<< std::endl;
-                    break;
-                }
+                //if(pfd.revents & POLLHUP){
+                    //std::cout << "POLLHUP"<< std::endl;
+                   // break;
+                //}
                 if(pfd.revents & POLLERR){
                     std::cout << "POLLERR"<<std::endl;
                     break;

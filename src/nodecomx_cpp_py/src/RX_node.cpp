@@ -23,14 +23,15 @@
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUS_PATH = "src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/";
 std::string SDM_PATH = "src/nodecomx_cpp_py/include/lib/sdmsh/";
-std::string IP ="192.168.0.198";
-int JANUS_RX_PORT = 9921;
-int JANUS_TX_PORT = 9915;
+std::string IP ="192.168.0.189";
+int JANUS_RX_PORT = 9920;
+int JANUS_TX_PORT = 9914;
 float STREAMFS = 250000.0;
 
 // RX varaibles
-int timeout = 10000; // milliseconds [ms]
+int timeout = 30000; // milliseconds [ms]
 std::string response;
+std::string comment;
 
 // using namespace std::chrono_literals;
 
@@ -86,6 +87,10 @@ private:
             std::cout << response << "hello \n";
             RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
             publisher_->publish(message);
+            std::getline(std::cin,comment);
+            std::this_thread::sleep_for(500ms);
+            modem.startTX("HELLO UNDERWATER");
+            std::this_thread::sleep_for(500ms);
 
         }
 

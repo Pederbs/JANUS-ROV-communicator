@@ -2,4 +2,4 @@ build
 install
 log
 .vscode
-src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/
+src/nodecomx_cpp_py/include/lib/
