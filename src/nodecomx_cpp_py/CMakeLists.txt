@@ -33,11 +33,16 @@ ament_target_dependencies(rxEvo rclcpp std_msgs)
 add_executable(publisher src/publisher.cpp)
 ament_target_dependencies(publisher rclcpp std_msgs)
 
+# Create PUSSUB executable
+add_executable(pubsub src/working.cpp)
+ament_target_dependencies(pubsub rclcpp std_msgs)
+
 # Install Cpp executables
 install(TARGETS
   txEvo
   rxEvo
   publisher
+  pubsub
   DESTINATION lib/${PROJECT_NAME}
 )
 
