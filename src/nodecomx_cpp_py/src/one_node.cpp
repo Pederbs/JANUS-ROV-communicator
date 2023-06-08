@@ -47,26 +47,33 @@ private:
     {
         // Opening pipe
         Evo_janusXsdm::connection modem(IP, JANUS_PATH, SDM_PATH, JANUS_RX_PORT, JANUS_TX_PORT, STREAMFS);
-
         // Configures modem and sets preamble
         modem.sdmConfigAir();
         std::this_thread::sleep_for(500ms);
         modem.setPreamble();
         std::this_thread::sleep_for(500ms);
 
-        // Start process
-        int fd_listen = modem.startRX();
-
         while (rclcpp::ok())
         {
-        // Perform continuous processing in AC
+        // Start process
+        int fd_listen = modem.startRX();
+        modem.listenRX(fd_listen, response, timeout);
 
-
+        // Bare dersom noe er tatt imot
         // Publish the processed data to topic B
         std_msgs::msg::String output_msg;
-        output_msg.data = "Processed data";  // Replace with your processed data
+        output_msg.data = response;
         publisher_->publish(output_msg);
         rclcpp::spin_some(this->get_node_base_interface());
+        // Close JANUS pipe
+        modem.closePipeRX(fd_listen);
+        modem.stopRX();
+
+        // Sender
+        modem.startTX("ello mate");
+
+
+
         // You can add a sleep or delay here if needed
         }
     }

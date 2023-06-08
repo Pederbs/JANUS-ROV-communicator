@@ -1,5 +1,5 @@
 CMakeFiles/janus.dir/src/c/janus/stream/format.c.o: \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/stream/format.c \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/stream/format.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -26,8 +26,8 @@ CMakeFiles/janus.dir/src/c/janus/stream/format.c.o: \
  /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/stream/format.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/types.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/stream/format.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -36,7 +36,7 @@ CMakeFiles/janus.dir/src/c/janus/stream/format.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/cmake_generated/janus/config.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/complex.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/export.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/stream/format.def
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/cmake_generated/janus/config.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/complex.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/export.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/stream/format.def

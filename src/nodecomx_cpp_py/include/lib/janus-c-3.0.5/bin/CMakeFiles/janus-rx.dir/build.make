@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5
+CMAKE_SOURCE_DIR = /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin
+CMAKE_BINARY_DIR = /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/janus-rx.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/janus-rx.dir/flags.make
 CMakeFiles/janus-rx.dir/src/c/cli/main.c.o: CMakeFiles/janus-rx.dir/flags.make
 CMakeFiles/janus-rx.dir/src/c/cli/main.c.o: ../src/c/cli/main.c
 CMakeFiles/janus-rx.dir/src/c/cli/main.c.o: CMakeFiles/janus-rx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/janus-rx.dir/src/c/cli/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/janus-rx.dir/src/c/cli/main.c.o -MF CMakeFiles/janus-rx.dir/src/c/cli/main.c.o.d -o CMakeFiles/janus-rx.dir/src/c/cli/main.c.o -c /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/janus-rx.dir/src/c/cli/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/janus-rx.dir/src/c/cli/main.c.o -MF CMakeFiles/janus-rx.dir/src/c/cli/main.c.o.d -o CMakeFiles/janus-rx.dir/src/c/cli/main.c.o -c /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/main.c
 
 CMakeFiles/janus-rx.dir/src/c/cli/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/janus-rx.dir/src/c/cli/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/main.c > CMakeFiles/janus-rx.dir/src/c/cli/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/main.c > CMakeFiles/janus-rx.dir/src/c/cli/main.c.i
 
 CMakeFiles/janus-rx.dir/src/c/cli/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/janus-rx.dir/src/c/cli/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/main.c -o CMakeFiles/janus-rx.dir/src/c/cli/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/main.c -o CMakeFiles/janus-rx.dir/src/c/cli/main.c.s
 
 CMakeFiles/janus-rx.dir/src/c/cli/string.c.o: CMakeFiles/janus-rx.dir/flags.make
 CMakeFiles/janus-rx.dir/src/c/cli/string.c.o: ../src/c/cli/string.c
 CMakeFiles/janus-rx.dir/src/c/cli/string.c.o: CMakeFiles/janus-rx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/janus-rx.dir/src/c/cli/string.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -MD -MT CMakeFiles/janus-rx.dir/src/c/cli/string.c.o -MF CMakeFiles/janus-rx.dir/src/c/cli/string.c.o.d -o CMakeFiles/janus-rx.dir/src/c/cli/string.c.o -c /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/janus-rx.dir/src/c/cli/string.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -MD -MT CMakeFiles/janus-rx.dir/src/c/cli/string.c.o -MF CMakeFiles/janus-rx.dir/src/c/cli/string.c.o.d -o CMakeFiles/janus-rx.dir/src/c/cli/string.c.o -c /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/string.c
 
 CMakeFiles/janus-rx.dir/src/c/cli/string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/janus-rx.dir/src/c/cli/string.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -E /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/string.c > CMakeFiles/janus-rx.dir/src/c/cli/string.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -E /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/string.c > CMakeFiles/janus-rx.dir/src/c/cli/string.c.i
 
 CMakeFiles/janus-rx.dir/src/c/cli/string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/janus-rx.dir/src/c/cli/string.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -S /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/string.c -o CMakeFiles/janus-rx.dir/src/c/cli/string.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -S /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/string.c -o CMakeFiles/janus-rx.dir/src/c/cli/string.c.s
 
 CMakeFiles/janus-rx.dir/src/c/cli/options.c.o: CMakeFiles/janus-rx.dir/flags.make
 CMakeFiles/janus-rx.dir/src/c/cli/options.c.o: ../src/c/cli/options.c
 CMakeFiles/janus-rx.dir/src/c/cli/options.c.o: CMakeFiles/janus-rx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/janus-rx.dir/src/c/cli/options.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -MD -MT CMakeFiles/janus-rx.dir/src/c/cli/options.c.o -MF CMakeFiles/janus-rx.dir/src/c/cli/options.c.o.d -o CMakeFiles/janus-rx.dir/src/c/cli/options.c.o -c /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/options.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/janus-rx.dir/src/c/cli/options.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -MD -MT CMakeFiles/janus-rx.dir/src/c/cli/options.c.o -MF CMakeFiles/janus-rx.dir/src/c/cli/options.c.o.d -o CMakeFiles/janus-rx.dir/src/c/cli/options.c.o -c /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/options.c
 
 CMakeFiles/janus-rx.dir/src/c/cli/options.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/janus-rx.dir/src/c/cli/options.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -E /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/options.c > CMakeFiles/janus-rx.dir/src/c/cli/options.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -E /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/options.c > CMakeFiles/janus-rx.dir/src/c/cli/options.c.i
 
 CMakeFiles/janus-rx.dir/src/c/cli/options.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/janus-rx.dir/src/c/cli/options.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -S /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/options.c -o CMakeFiles/janus-rx.dir/src/c/cli/options.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -Wall -Wshadow -pedantic -S /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/options.c -o CMakeFiles/janus-rx.dir/src/c/cli/options.c.s
 
 # Object files for target janus-rx
 janus__rx_OBJECTS = \
@@ -127,7 +127,7 @@ janus-rx: CMakeFiles/janus-rx.dir/build.make
 janus-rx: libjanus.a
 janus-rx: /usr/local/lib/libfftw3.a
 janus-rx: CMakeFiles/janus-rx.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable janus-rx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable janus-rx"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/janus-rx.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/janus-rx.dir/clean:
 .PHONY : CMakeFiles/janus-rx.dir/clean
 
 CMakeFiles/janus-rx.dir/depend:
-	cd /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5 /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5 /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles/janus-rx.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5 /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5 /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles/janus-rx.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/janus-rx.dir/depend
 

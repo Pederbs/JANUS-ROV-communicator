@@ -1,168 +1,16 @@
--> Triggering detection (0.474823)
+-> Triggering detection (0.001385)
+-> Triggering detection (3.344354)
 State          : Parameter Set Id                             : 2
 State          : Parameter Set Name                           : Evologics 1834 modem
 State          : Center Frequency (Hz)                        : 23040
 State          : Available Bandwidth (Hz)                     : 8320
 State          : Chip Frequency (Hz)                          : 320
 State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 10.040000
-State          : Gamma                                        : 1.000063
-State          : Speed (m/s)                                  : -0.097258
+State          : After (s)                                    : 3.344864
+State          : Gamma                                        : 1.000312
+State          : Speed (m/s)                                  : -0.479727
 State          : RSSI                                         : 255
-State          : SNR                                          : 14.056
-Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
-Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
-Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
-Packet         :   Version Number (4 bits)                    : 3
-Packet         :   Mobility Flag (1 bit)                      : 0
-Packet         :   Schedule Flag (1 bit)                      : 1
-Packet         :   Tx/Rx Flag (1 bit)                         : 1
-Packet         :   Forwarding Capability (1 bit)              : 0
-Packet         :   Class User Identifier (8 bits)             : 16 (NATO JANUS reference Implementation)
-Packet         :   Application Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
-Packet         :   Cargo Size                                 : 16
-Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity                                 : 1
-Packet         : Application Data Fields                      : 
-Packet         :   Station_Identifier                         : 0
-Packet         :   Parameter Set Identifier                   : 0
-Packet         :   Payload Size                               :  16
-Packet         :   Payload                                    : ASDFGHJKL
-Packet         : Cargo (hex)                                  : 41 53 44 46 47 48 4A 4B 4C 00 00 00 00 00 00 00 
-Packet         : Cargo (ASCII)                                : "ASDFGHJKL"
-tion Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservat-> Triggering detection (11.444905)
-State          : Parameter Set Id                             : 2
-State          : Parameter Set Name                           : Evologics 1834 modem
-State          : Center Frequency (Hz)                        : 23040
-State          : Available Bandwidth (Hz)                     : 8320
-State          : Chip Frequency (Hz)                          : 320
-State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 19.975936
-State          : Gamma                                        : 1.000088
-State          : Speed (m/s)                                  : -0.136127
-State          : RSSI                                         : 255
-State          : SNR                                          : 14.032
-Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
-Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
-Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
-Packet         :   Version Number (4 bits)                    : 3
-Packet         :   Mobility Flag (1 bit)                      : 0
-Packet         :   Schedule Flag (1 bit)                      : 1
-Packet         :   Tx/Rx Flag (1 bit)                         : 1
-Packet         :   Forwarding Capability (1 bit)              : 0
-Packet         :   Class User Identifier (8 bits)             : 16 (NATO JANUS reference Implementation)
-Packet         :   Application Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
-Packet         :   Cargo Size                                 : 16
-Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity                                 : 1
-Packet         : Application Data Fields                      : 
-Packet         :   Station_Identifier                         : 0
-Packet         :   Parameter Set Identifier                   : 0
-Packet         :   Payload Size                               :  16
-Packet         :   Payload                                    : ASDFGHJKL
-Packet         : Cargo (hex)                                  : 41 53 44 46 47 48 4A 4B 4C 00 00 00 00 00 00 00 
-Packet         : Cargo (ASCII)                                : "ASDFGHJKL"
-tion Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservat-> Triggering detection (21.380809)
-State          : Parameter Set Id                             : 2
-State          : Parameter Set Name                           : Evologics 1834 modem
-State          : Center Frequency (Hz)                        : 23040
-State          : Available Bandwidth (Hz)                     : 8320
-State          : Chip Frequency (Hz)                          : 320
-State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 29.988704
-State          : Gamma                                        : 1.000168
-State          : Speed (m/s)                                  : -0.258323
-State          : RSSI                                         : 255
-State          : SNR                                          : 14.031
-Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
-Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
-Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
-Packet         :   Version Number (4 bits)                    : 3
-Packet         :   Mobility Flag (1 bit)                      : 0
-Packet         :   Schedule Flag (1 bit)                      : 1
-Packet         :   Tx/Rx Flag (1 bit)                         : 1
-Packet         :   Forwarding Capability (1 bit)              : 0
-Packet         :   Class User Identifier (8 bits)             : 16 (NATO JANUS reference Implementation)
-Packet         :   Application Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
-Packet         :   Cargo Size                                 : 16
-Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity                                 : 1
-Packet         : Application Data Fields                      : 
-Packet         :   Station_Identifier                         : 0
-Packet         :   Parameter Set Identifier                   : 0
-Packet         :   Payload Size                               :  16
-Packet         :   Payload                                    : ASDFGHJKL
-Packet         : Cargo (hex)                                  : 41 53 44 46 47 48 4A 4B 4C 00 00 00 00 00 00 00 
-Packet         : Cargo (ASCII)                                : "ASDFGHJKL"
-tion Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
-Packet         :   Cargo Siz-> Triggering detection (31.393513)
-State          : Parameter Set Id                             : 2
-State          : Parameter Set Name                           : Evologics 1834 modem
-State          : Center Frequency (Hz)                        : 23040
-State          : Available Bandwidth (Hz)                     : 8320
-State          : Chip Frequency (Hz)                          : 320
-State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 40.033024
-State          : Gamma                                        : 1.000110
-State          : Speed (m/s)                                  : -0.168992
-State          : RSSI                                         : 255
-State          : SNR                                          : 14.038
-Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
-Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
-Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
-Packet         :   Version Number (4 bits)                    : 3
-Packet         :   Mobility Flag (1 bit)                      : 0
-Packet         :   Schedule Flag (1 bit)                      : 1
-Packet         :   Tx/Rx Flag (1 bit)                         : 1
-Packet         :   Forwarding Capability (1 bit)              : 0
-Packet         :   Class User Identifier (8 bits)             : 16 (NATO JANUS reference Implementation)
-Packet         :   Application Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
-Packet         :   Cargo Size                                 : 16
-Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity                                 : 1
-Packet         : Application Data Fields                      : 
-Packet         :   Station_Identifier                         : 0
-Packet         :   Parameter Set Identifier                   : 0
-Packet         :   Payload Size                               :  16
-Packet         :   Payload                                    : ASDFGHJKL
-Packet         : Cargo (hex)                                  : 41 53 44 46 47 48 4A 4B 4C 00 00 00 00 00 00 00 
-Packet         : Cargo (ASCII)                                : "ASDFGHJKL"
-tion Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservat-> Triggering detection (41.437865)
-State          : Parameter Set Id                             : 2
-State          : Parameter Set Name                           : Evologics 1834 modem
-State          : Center Frequency (Hz)                        : 23040
-State          : Available Bandwidth (Hz)                     : 8320
-State          : Chip Frequency (Hz)                          : 320
-State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 49.992416
-State          : Gamma                                        : 1.000077
-State          : Speed (m/s)                                  : -0.118267
-State          : RSSI                                         : 255
-State          : SNR                                          : 14.036
+State          : SNR                                          : 12.678
 Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
 Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
 Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
@@ -192,24 +40,21 @@ Packet         :     Reservation/Repeat Flag (1 bit)          : 0
 Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
 Packet         :   Cargo Size                                 : 16
 Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity                                 : 1
-Packet         : Application Data Fields                      : 
-Packet         :   Station_Identifier                         : 0
-Packet         :   Parameter Set Identifier                   : 0
-Packet         :   Payload Size                               :  16
-Packet         :   Payload                                    : ASDFGHJKL
-Packet         : Cargo (hex)                           -> Triggering detection (51.397321)
+Packet         : CRC Validity -> Triggering detection (0.001385)
+-> Triggering detection (0.183416)
+-> Triggering detection (0.001385)
+-> Triggering detection (3.567792)
 State          : Parameter Set Id                             : 2
 State          : Parameter Set Name                           : Evologics 1834 modem
 State          : Center Frequency (Hz)                        : 23040
 State          : Available Bandwidth (Hz)                     : 8320
 State          : Chip Frequency (Hz)                          : 320
 State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 60.001888
-State          : Gamma                                        : 1.000086
-State          : Speed (m/s)                                  : -0.132152
+State          : After (s)                                    : 3.567744
+State          : Gamma                                        : 1.000352
+State          : Speed (m/s)                                  : -0.541613
 State          : RSSI                                         : 255
-State          : SNR                                          : 14.015
+State          : SNR                                          : 12.624
 Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
 Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
 Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
@@ -233,97 +78,18 @@ Packet         :   Payload Size                               :  16
 Packet         :   Payload                                    : ASDFGHJKL
 Packet         : Cargo (hex)                                  : 41 53 44 46 47 48 4A 4B 4C 00 00 00 00 00 00 00 
 Packet         : Cargo (ASCII)                                : "ASDFGHJKL"
-tion Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservat-> Triggering detection (61.407543)
+tion Type (6 -> Triggering detection (0.001385)
 State          : Parameter Set Id                             : 2
 State          : Parameter Set Name                           : Evologics 1834 modem
 State          : Center Frequency (Hz)                        : 23040
 State          : Available Bandwidth (Hz)                     : 8320
 State          : Chip Frequency (Hz)                          : 320
 State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 70.014176
-State          : Gamma                                        : 1.000137
-State          : Speed (m/s)                                  : -0.210812
+State          : After (s)                                    : 0.001376
+State          : Gamma                                        : 1.000742
+State          : Speed (m/s)                                  : -1.142156
 State          : RSSI                                         : 255
-State          : SNR                                          : 14.028
-Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
-Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
-Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
-Packet         :   Version Number (4 bits)                    : 3
-Packet         :   Mobility Flag (1 bit)                      : 0
-Packet         :   Schedule Flag (1 bit)                      : 1
-Packet         :   Tx/Rx Flag (1 bit)                         : 1
-Packet         :   Forwarding Capability (1 bit)              : 0
-Packet         :   Class User Identifier (8 bits)             : 16 (NATO JANUS reference Implementation)
-Packet         :   Application Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
-Packet         :   Cargo Size                                 : 16
-Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity                                 : 1
-Packet         : Application Data Fields                      : 
-Packet         :   Station_Identifier                         : 0
-Packet         :   Parameter Set Identifier                   : 0
-Packet         :   Payload Size                               :  16
-Packet         :   Payload                                    : ASDFGHJKL
-Packet         : Cargo (hex)                                  : 41 53 44 46 47 48 4A 4B 4C 00 00 00 00 00 00 00 
-Packet         : Cargo (ASCII)                                : "ASDFGHJKL"
-tion Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservat-> Triggering detection (71.418985)
-State          : Parameter Set Id                             : 2
-State          : Parameter Set Name                           : Evologics 1834 modem
-State          : Center Frequency (Hz)                        : 23040
-State          : Available Bandwidth (Hz)                     : 8320
-State          : Chip Frequency (Hz)                          : 320
-State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 79.961728
-State          : Gamma                                        : 1.000089
-State          : Speed (m/s)                                  : -0.136470
-State          : RSSI                                         : 255
-State          : SNR                                          : 14.006
-Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
-Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
-Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
-Packet         :   Version Number (4 bits)                    : 3
-Packet         :   Mobility Flag (1 bit)                      : 0
-Packet         :   Schedule Flag (1 bit)                      : 1
-Packet         :   Tx/Rx Flag (1 bit)                         : 1
-Packet         :   Forwarding Capability (1 bit)              : 0
-Packet         :   Class User Identifier (8 bits)             : 16 (NATO JANUS reference Implementation)
-Packet         :   Application Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
-Packet         :   Cargo Size                                 : 16
-Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity                                 : 1
-Packet         : Application Data Fields                      : 
-Packet         :   Station_Identifier                         : 0
-Packet         :   Parameter Set Identifier                   : 0
-Packet         :   Payload Size                               :  16
-Packet         :   Payload                                    : ASDFGHJKL
-Packet         : Cargo (hex)                                  : 41 53 44 46 47 48 4A 4B 4C 00 00 00 00 00 00 00 
-Packet         : Cargo (ASCII)                                : "ASDFGHJKL"
-tion Type (6 bits)                  : 0
-Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
-Packet         :     Reservation/Repeat Flag (1 bit)          : 0
-Packet         :     Reservat-> Triggering detection (81.366601)
-State          : Parameter Set Id                             : 2
-State          : Parameter Set Name                           : Evologics 1834 modem
-State          : Center Frequency (Hz)                        : 23040
-State          : Available Bandwidth (Hz)                     : 8320
-State          : Chip Frequency (Hz)                          : 320
-State          : Chip Duration (s)                            : 0.003125
-State          : After (s)                                    : 89.963264
-State          : Gamma                                        : 1.000126
-State          : Speed (m/s)                                  : -0.194319
-State          : RSSI                                         : 255
-State          : SNR                                          : 14.008
+State          : SNR                                          : -nan
 Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
 Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
 Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
@@ -353,4 +119,52 @@ Packet         :     Reservation/Repeat Flag (1 bit)          : 0
 Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
 Packet         :   Cargo Size                                 : 16
 Packet         :   CRC (8 bits)                               : 30
-Packet         : CRC Validity-> Triggering detection (91.368073)
+Packet         : CRC Validity   -> Triggering detection (0.001385)
+State          : Parameter Set Id                             : 2
+State          : Parameter Set Name                           : Evologics 1834 modem
+State          : Center Frequency (Hz)                        : 23040
+State          : Available Bandwidth (Hz)                     : 8320
+State          : Chip Frequency (Hz)                          : 320
+State          : Chip Duration (s)                            : 0.003125
+State          : After (s)                                    : 0.001376
+State          : Gamma                                        : 1.000082
+State          : Speed (m/s)                                  : -0.125670
+State          : RSSI                                         : 255
+State          : SNR                                          : -nan
+Packet         : Bytes (decimal)                              : | 54| 16|  0|220|  0|  0|  5| 30|
+Packet         : Bytes (hex)                                  : | 36| 10| 00| DC| 00| 00| 05| 1E|
+Packet         : Fields (binary)                              : |0011|0|1|1|0|00010000|000000|0|0110111|00000000000000000000000101|00011110|
+Packet         :   Version Number (4 bits)                    : 3
+Packet         :   Mobility Flag (1 bit)                      : 0
+Packet         :   Schedule Flag (1 bit)                      : 1
+Packet         :   Tx/Rx Flag (1 bit)                         : 1
+Packet         :   Forwarding Capability (1 bit)              : 0
+Packet         :   Class User Identifier (8 bits)             : 16 (NATO JANUS reference Implementation)
+Packet         :   Application Type (6 bits)                  : 0
+Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
+Packet         :     Reservation/Repeat Flag (1 bit)          : 0
+Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
+Packet         :   Cargo Size                                 : 16
+Packet         :   CRC (8 bits)                               : 30
+Packet         : CRC Validity                                 : 1
+Packet         : Application Data Fields                      : 
+Packet         :   Station_Identifier                         : 0
+Packet         :   Parameter Set Identifier                   : 0
+Packet         :   Payload Size                               :  16
+Packet         :   Payload                                    : BDFGHJKLÙœ©©j	
+Packet         : Cargo (hex)                                  : 42 1B 44 46 47 48 4A 4B 4C 02 D9 9C A9 A9 6A 09 
+Packet         : Cargo (ASCII)                                : "BDFGHJKLÙœ©©j	"
+its)                  : 0
+Packet         :   Application Data (26 bits)                 : 00000000000000000000000101
+Packet         :     Reservation/Repeat Flag (1 bit)          : 0
+Packet         :     Reservation Time (7 bits)                : 0.62788432 (lookup table index 55)
+Packet         :   Cargo Size                                 : 16
+Packet         :   CRC (8 bits)                               : 30
+Packet         : CRC Validity                                 : 1
+Packet         : Application Data Fields                      : 
+Packet         :   Station_Identifier                         : 0
+Packet         :   Parameter Set Identifier                   : 0
+Packet         :   Payload Size                               :  16
+Packet         :   Payload                                    : BDFGHJKLÙœ©©j	
+Packet         : Cargo (hex)                       -> Triggering detection (0.001385)
+-> Triggering detection (0.001385)

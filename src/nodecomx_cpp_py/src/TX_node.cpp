@@ -37,8 +37,10 @@ public:
         Evo_janusXsdm::connection modem(IP,JANUS_PATH,SDM_PATH, JANUS_RX_PORT,JANUS_TX_PORT,STREAMFS); 
         //Configures modem and sets preamble
         modem.sdmConfigAir();
+        std::cout << "Print: 1\n";
         std::this_thread::sleep_for(500ms);
         modem.setPreamble();
+        std::cout << "Print: 2\n";
         std::this_thread::sleep_for(500ms);
 
         // Creating subsciber
@@ -58,6 +60,8 @@ private:
         RCLCPP_INFO(this->get_logger(), "Heard: '%s'", msg->data.c_str());
         //Constructing a connection object
         Evo_janusXsdm::connection modem(IP,JANUS_PATH,SDM_PATH, JANUS_RX_PORT,JANUS_TX_PORT,STREAMFS); 
+        std::this_thread::sleep_for(500ms);
+        std::cout << "Print: 3\n";
         modem.startTX(msg->data.c_str());
     }
 };

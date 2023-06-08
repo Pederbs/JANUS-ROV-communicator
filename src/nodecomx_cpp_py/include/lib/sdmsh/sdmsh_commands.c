@@ -17,6 +17,15 @@
 
 #include <stream.h>
 
+#include <unistd.h> //WM for pid 
+#include <sys/types.h> //WM for pid 
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h> //WM for pid 
+#include <sys/types.h> //WM for pid 
+
+
+
 int sdmsh_cmd_help       (struct shell_config *sc, char *argv[], int argc);
 int sdmsh_cmd_config     (struct shell_config *sc, char *argv[], int argc);
 int sdmsh_cmd_stop       (struct shell_config *sc, char *argv[], int argc);
@@ -101,6 +110,7 @@ int sdmsh_stream_new(sdm_session_t *ss, int direction, char *parameter)
     
     stream = sdm_stream_new(direction, drv, drv_param);
     if (stream == NULL) {
+
         logger(ERR_LOG, "Stream creation error\n");
         goto stream_new_error;
     }
@@ -122,6 +132,7 @@ int sdmsh_cmd_help(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_config(struct shell_config *sc, char *argv[], int argc)
 {
+    
     uint16_t threshold;
     uint8_t gain, srclvl, preamp_gain = 0;
     sdm_session_t *ss = sc->cookie;
@@ -141,6 +152,7 @@ int sdmsh_cmd_config(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_usbl_config(struct shell_config *sc, char *argv[], int argc)
 {
+    
     uint16_t delay, samples;
     uint8_t gain, sample_rate;
     sdm_session_t *ss = sc->cookie;
@@ -159,6 +171,7 @@ int sdmsh_cmd_usbl_config(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_stop(struct shell_config *sc, char *argv[], int argc)
 {
+    
     sdm_session_t *ss = sc->cookie;
 
     argv = argv;
@@ -171,6 +184,7 @@ int sdmsh_cmd_stop(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_ref(struct shell_config *sc, char *argv[], int argc)
 {
+    
     int16_t  *data;
     ssize_t len = 1024;
     sdm_session_t *ss = sc->cookie;
@@ -224,6 +238,7 @@ int sdmsh_cmd_ref(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_tx(struct shell_config *sc, char *argv[], int argc)
 {
+    
     size_t len = 1024 * 2, cnt, cmd;
     int16_t *data;
     sdm_session_t *ss = sc->cookie;
@@ -291,6 +306,7 @@ int sdmsh_cmd_tx(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_rx_helper(struct shell_config *sc, char *argv[], int argc, int code)
 {
+    
     long nsamples = 0;
     /* FILE *fp; */
     sdm_session_t *ss = sc->cookie;
@@ -346,6 +362,7 @@ int sdmsh_cmd_rx_helper(struct shell_config *sc, char *argv[], int argc, int cod
 
 int sdmsh_cmd_rx(struct shell_config *sc, char *argv[], int argc)
 {
+    
     return sdmsh_cmd_rx_helper(sc, argv, argc, SDM_CMD_RX);
 }
 
@@ -356,6 +373,7 @@ int sdmsh_cmd_rx_janus(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_usbl_rx(struct shell_config *sc, char *argv[], int argc)
 {
+    
     uint8_t channel = 0;
     uint16_t samples = 0;
     sdm_session_t *ss = sc->cookie;
@@ -382,6 +400,7 @@ int sdmsh_cmd_usbl_rx(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_systime(struct shell_config *sc, char *argv[], int argc)
 {
+    
     sdm_session_t *ss = sc->cookie;
 
     ARGS_RANGE(argc == 1);
@@ -393,6 +412,7 @@ int sdmsh_cmd_systime(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_waitsyncin(struct shell_config *sc, char *argv[], int argc)
 {
+    
     sdm_session_t *ss = sc->cookie;
 
     argv = argv;
@@ -405,6 +425,7 @@ int sdmsh_cmd_waitsyncin(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_usleep(struct shell_config *sc, char *argv[], int argc)
 {
+    
     useconds_t usec;
     sc = sc;
 
@@ -417,6 +438,7 @@ int sdmsh_cmd_usleep(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_history(struct shell_config *sc, char *argv[], int argc)
 {
+    
     int hist_num = 10;
     sc = sc;
 
@@ -431,6 +453,7 @@ int sdmsh_cmd_history(struct shell_config *sc, char *argv[], int argc)
 
 int sdmsh_cmd_source(struct shell_config *sc, char *argv[], int argc)
 {
+    
     int rc;
 
     ARGS_RANGE(argc == 2);

@@ -16,6 +16,11 @@
 #include <compat/readline6.h>
 #include <readline/readline.h>
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h> //WM for pid 
+#include <sys/types.h> //WM for pid 
+
 #include <sdm.h>
 #include <shell.h>
 #include <sdmsh_commands.h>
@@ -99,6 +104,7 @@ int option_index = 0;
 
 static void sdmsh_signal_event_hook(int signo)
 {
+    
     switch (signo) {
         case SIGINT:
             if (sdm_session->state == SDM_STATE_RX) {
@@ -121,6 +127,7 @@ char *short_hostname(char *host) {
 
 void sdmsh_update_promt_state(sdm_session_t *ss, char *host)
 {
+    
     static int old_state = -1;
     static unsigned long data_len = 0;
 
@@ -148,6 +155,8 @@ void sdmsh_update_promt_state(sdm_session_t *ss, char *host)
 
 int main(int argc, char *argv[])
 {
+
+
     char *progname, *host;
     int rc = 0;
     int len;
@@ -260,7 +269,7 @@ int main(int argc, char *argv[])
     sdm_session = sdm_connect(host, port);
 
     if (sdm_session == NULL)
-        err(1, "sdm_connect(\"%s:%d\"): ", host, port);
+        err(1, "sdm_connect_WM(\"%s:%d\"): ", host, port);
 
     if (flags & FLAG_SEND_STOP) {
         sdm_cmd(sdm_session, SDM_CMD_STOP);
@@ -366,7 +375,7 @@ int main(int argc, char *argv[])
               err(1, "read(): ");
 
             do {
-                rc = sdm_handle_rx_data(sdm_session, buf, len);
+                rc = sdm_handle_rx_data(sdm_session, buf, len); //WM was here
                 if (len && !sdm_is_async_reply(sdm_session->cmd.cmd))
                     if (sdm_session->rx_data_len == 0 || rc == 0)
                         shell_forced_update_display(&shell_config);

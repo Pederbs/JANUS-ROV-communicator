@@ -8,6 +8,8 @@
 #include <utils.h>
 #include <stream.h>
 
+
+
 #define SDM_ERR_NO_SDM_MODE -42
 #define SDM_ERR_BUSY        -43
 #define SDM_ERR_SAVE_FAIL   -44
@@ -116,8 +118,9 @@ void  sdm_close(sdm_session_t *ss);
 int   sdm_cmd(sdm_session_t *sd, int cmd_code, ...);
 int   sdm_extract_reply(char *buf, size_t len, sdm_pkt_t **cmd);
 
+
 int   sdm_rx(sdm_session_t *ss, int cmd, ...);
-int   sdm_handle_rx_data(sdm_session_t *ss, char *buf, int len);
+int   sdm_handle_rx_data(sdm_session_t *ss, char *buf, int len); //WM Was here
 
 void  sdm_set_idle_state(sdm_session_t *ss);
 

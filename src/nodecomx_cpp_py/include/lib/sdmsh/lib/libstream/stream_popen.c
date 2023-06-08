@@ -105,7 +105,7 @@ static int stream_write(sdm_stream_t *stream, void* samples, unsigned int sample
                     errno = 0;
                     return SDM_ERROR_EOS;
                 }
-                RETURN_ERROR("writing to stream", errno);
+                RETURN_ERROR("writing to stream", errno); //WM was here 3 
             }
 
             if (feof(pdata->fd))

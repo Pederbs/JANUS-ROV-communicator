@@ -12,6 +12,13 @@
 #include <assert.h>
 #include <limits.h>    /* SHORT_MAX  */
 
+#include <unistd.h> //WM for pid 
+#include <sys/types.h> //WM for pid 
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h> //WM for pid 
+#include <sys/types.h> //WM for pid 
+
 #include <sdm.h>
 
 #include <stream.h>
@@ -508,7 +515,7 @@ int sdm_buf_resize(sdm_session_t *ss, char *buf, int len)
     return len;
 }
 
-int sdm_handle_rx_data(sdm_session_t *ss, char *buf, int len)
+int sdm_handle_rx_data(sdm_session_t *ss, char *buf, int len) //wm was here 
 {
     sdm_pkt_t *cmd;
     int handled, data_len;
@@ -641,8 +648,10 @@ int sdm_handle_rx_data(sdm_session_t *ss, char *buf, int len)
     return -1;
 }
 
-int sdm_rx(sdm_session_t *ss, int cmd, ...)
+int sdm_rx(sdm_session_t *ss, int cmd, ...) //Wm was here 2 
 {
+
+
     int len = 0;
     char buf[BUFSIZE];
 
@@ -684,7 +693,7 @@ int sdm_rx(sdm_session_t *ss, int cmd, ...)
             if (len < 0)
                 err(1, "read(): ");
 
-             rc = sdm_handle_rx_data(ss, buf, len);
+             rc = sdm_handle_rx_data(ss, buf, len); //WM was here
             if (ss->rx_data_len == 0 || rc == 0) {
                 if (ss->cmd.cmd == cmd) {
                     if (cmd == SDM_REPLY_REPORT) {

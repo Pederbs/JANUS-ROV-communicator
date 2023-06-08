@@ -481,7 +481,7 @@ namespace Evo_janusXsdm
         while(true)
         {    
             std::array<std::string,4> myArray; 
-            std::cout << "hello from while\n";
+
             //Setting up poll() for read from pipe:
             pfd.fd = readJanusPipe;
             pfd.events = POLLIN | POLLERR | POLLHUP;
@@ -533,7 +533,7 @@ namespace Evo_janusXsdm
                         }
                     default:                                            //Read(): OK
                         janus_frame+= janus_char; 
-                        std::cout << "Hello from default\n";
+
                         
                         // For deabug and ez to read janusframe. print janusfram in file        //TODO add option to print janusframe to file, ez to read frame then. 
                         std::ofstream MyFile10 ("ost.txt", std::ios::app);

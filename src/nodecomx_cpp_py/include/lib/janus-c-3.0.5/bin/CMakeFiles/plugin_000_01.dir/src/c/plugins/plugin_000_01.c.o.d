@@ -1,5 +1,5 @@
 CMakeFiles/plugin_000_01.dir/src/c/plugins/plugin_000_01.c.o: \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/plugins/plugin_000_01.c \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/plugins/plugin_000_01.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -66,19 +66,19 @@ CMakeFiles/plugin_000_01.dir/src/c/plugins/plugin_000_01.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/defaults.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/types.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/defaults.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/cmake_generated/janus/config.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/codec/codec.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/export.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/codec/plugin.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/codec/fields.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/utils/memory.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/cmake_generated/janus/config.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/codec/codec.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/export.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/codec/plugin.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/codec/fields.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/utils/memory.h \
  /usr/include/dlfcn.h /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/error.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/crc.h \
- /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/janus/msb.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/error.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/crc.h \
+ /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/janus/msb.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h

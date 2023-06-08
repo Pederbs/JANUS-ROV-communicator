@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/main.c" "CMakeFiles/janus-tx.dir/src/c/cli/main.c.o" "gcc" "CMakeFiles/janus-tx.dir/src/c/cli/main.c.o.d"
-  "/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/options.c" "CMakeFiles/janus-tx.dir/src/c/cli/options.c.o" "gcc" "CMakeFiles/janus-tx.dir/src/c/cli/options.c.o.d"
-  "/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/cli/string.c" "CMakeFiles/janus-tx.dir/src/c/cli/string.c.o" "gcc" "CMakeFiles/janus-tx.dir/src/c/cli/string.c.o.d"
+  "/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/main.c" "CMakeFiles/janus-tx.dir/src/c/cli/main.c.o" "gcc" "CMakeFiles/janus-tx.dir/src/c/cli/main.c.o.d"
+  "/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/options.c" "CMakeFiles/janus-tx.dir/src/c/cli/options.c.o" "gcc" "CMakeFiles/janus-tx.dir/src/c/cli/options.c.o.d"
+  "/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/cli/string.c" "CMakeFiles/janus-tx.dir/src/c/cli/string.c.o" "gcc" "CMakeFiles/janus-tx.dir/src/c/cli/string.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles/janus.dir/DependInfo.cmake"
+  "/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles/janus.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

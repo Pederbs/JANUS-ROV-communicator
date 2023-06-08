@@ -29,7 +29,7 @@ int JANUS_TX_PORT = 9915;
 float STREAMFS = 250000.0;
 
 // RX varaibles
-int timeout = 6000; // milliseconds [ms]
+int timeout = 10000; // milliseconds [ms]
 std::string response;
 
 // using namespace std::chrono_literals;
@@ -46,8 +46,10 @@ public:
         Evo_janusXsdm::connection modem(IP, JANUS_PATH, SDM_PATH, JANUS_RX_PORT, JANUS_TX_PORT, STREAMFS);
         // Configures modem and sets preamble
         modem.sdmConfigAir();
+        std::cout << "Print: 1\n";
         std::this_thread::sleep_for(500ms);
         modem.setPreamble();
+        std::cout << "Print: 2\n";
         std::this_thread::sleep_for(500ms);
 
         // Create publisher
@@ -69,10 +71,14 @@ private:
     {
         Evo_janusXsdm::connection modem(IP, JANUS_PATH, SDM_PATH, JANUS_RX_PORT, JANUS_TX_PORT, STREAMFS);
         std::this_thread::sleep_for(500ms);
-        int fd_listen = modem.startRX();
+        //int fd_listen = modem.startRX();
+        //std::cout << "Print: 3\n";
         while(rclcpp::ok())
         {
-            modem.listenRX(fd_listen, response, 120000);
+	    std::cout << "hello from ROS while\n";
+        //std::array<std::string,4> responsFromFrame = modem.listenRX(fd_listen, response, 10000);
+        std::array<std::string,4> responsFromFrame = modem.listenOnceRXsimple(response,timeout);
+        std::cout << "Print: 4\n";
 
             // Populate and publish message
             auto message = std_msgs::msg::String();
@@ -84,8 +90,10 @@ private:
         }
 
         // Close JANUS pipe
-        modem.closePipeRX(fd_listen);
-        modem.stopRX();
+        //modem.closePipeRX(fd_listen);
+        // std::cout << "Print: 5\n";
+        // modem.stopRX();
+        // std::cout << "Print: 6\n";
     }
 
     void timer_callback()
@@ -112,6 +120,8 @@ int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<ComPubNode>());
+    std::cout << "Shutting down\n";
     rclcpp::shutdown();
+    std::cout << "Skal dette kjore?\n";
     return 0;
 }

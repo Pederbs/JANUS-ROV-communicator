@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c/plugins/plugin_000_02.c" "CMakeFiles/plugin_000_02.dir/src/c/plugins/plugin_000_02.c.o" "gcc" "CMakeFiles/plugin_000_02.dir/src/c/plugins/plugin_000_02.c.o.d"
+  "/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c/plugins/plugin_000_02.c" "CMakeFiles/plugin_000_02.dir/src/c/plugins/plugin_000_02.c.o" "gcc" "CMakeFiles/plugin_000_02.dir/src/c/plugins/plugin_000_02.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles/janus.dir/DependInfo.cmake"
+  "/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles/janus.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

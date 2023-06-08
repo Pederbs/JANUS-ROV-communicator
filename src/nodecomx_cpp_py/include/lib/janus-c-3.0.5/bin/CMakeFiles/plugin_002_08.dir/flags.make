@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DJANUS_PLUGINS_PATH=\"/usr/local/share/janus/plugins\" -DJANUS_SYS_HAS___ALLOCA=1 -Dplugin_002_08_EXPORTS
 
-C_INCLUDES = -I/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/src/c -I/home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/cmake_generated
+C_INCLUDES = -I/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/src/c -I/home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/cmake_generated
 
 C_FLAGS =  -fPIC -fPIC
 

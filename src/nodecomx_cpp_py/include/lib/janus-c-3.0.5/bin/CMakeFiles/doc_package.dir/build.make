@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5
+CMAKE_SOURCE_DIR = /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin
+CMAKE_BINARY_DIR = /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin
 
 # Utility rule file for doc_package.
 
@@ -67,7 +67,7 @@ include CMakeFiles/doc_package.dir/compiler_depend.make
 include CMakeFiles/doc_package.dir/progress.make
 
 CMakeFiles/doc_package:
-	cd /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/cmake_generated && zip -r /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/janus-3.0.5-doc.zip janus-3.0.5-doc
+	cd /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/cmake_generated && zip -r /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/janus-3.0.5-doc.zip janus-3.0.5-doc
 
 doc_package: CMakeFiles/doc_package
 doc_package: CMakeFiles/doc_package.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/doc_package.dir/clean:
 .PHONY : CMakeFiles/doc_package.dir/clean
 
 CMakeFiles/doc_package.dir/depend:
-	cd /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5 /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5 /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin /home/peder/Integration_week/NTNU_COM_JANUSxSDM/lib/janus-c-3.0.5/bin/CMakeFiles/doc_package.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5 /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5 /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin /home/peder/GitHub/JANUS-ROV-communicator/src/nodecomx_cpp_py/include/lib/janus-c-3.0.5/bin/CMakeFiles/doc_package.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc_package.dir/depend
 
